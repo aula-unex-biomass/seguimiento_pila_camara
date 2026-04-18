@@ -128,14 +128,17 @@
   </iframe>
 
   <!-- ✅ JS MÍNIMO: solo ocultar a los 7 segundos -->
-  <script>
+<script>
+  // ✅ Solo / tablet
+  if (window.innerWidth < 900) {
     setTimeout(() => {
       const header = document.querySelector("header");
       if (header) {
         header.classList.add("hidden");
       }
-    }, 7000);
-  </script>
+    }, 7000); // 7 segundos
+  }
+</script>
 
 </body>
 </html>
